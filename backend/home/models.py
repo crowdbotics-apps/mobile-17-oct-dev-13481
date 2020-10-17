@@ -9,19 +9,20 @@ from django.db import models
 class CustomText(models.Model):
     title = models.CharField(
         max_length=150,
+        blank=True,
     )
     vcvbcbvcbc = models.GenericIPAddressField(
+        null=True,
+        blank=True,
         protocol="both",
         unpack_ipv4=False,
-        null=True,
-        blank=True,
     )
-    gfdgfdgh = models.OneToOneField(
+    jhgjgjhgjhgjhgjhgjhgjhgjhgjhgjhgjhgjhgj = models.OneToOneField(
         "users.User",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
-        related_name="customtext_gfdgfdgh",
+        on_delete=models.CASCADE,
+        related_name="customtext_jhgjgjhgjhgjhgjhgjhgjhgjhgjhgjhgjhgjhgj",
     )
 
     def __str__(self):
