@@ -1,9 +1,8 @@
 import axios from "axios"
-import { NEW_CONNECTOR_HGHGHG_SECRET } from "react-native-dotenv"
+import {} from "react-native-dotenv"
 const newConnectorhghghg = axios.create({
   baseURL:
     "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/13481/storyboard/12634/",
-  params: { private_key: NEW_CONNECTOR_HGHGHG_SECRET },
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 const mobileoctAPI = axios.create({
